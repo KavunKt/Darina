@@ -123,6 +123,13 @@ body{
     height: 35px;
     position: relative;
 }
+.left-picture2{
+    background-image: url('../img/people.png');
+    position: relative;
+    widows: 205px; ;
+    height:137px ;
+   
+}
    .left-side-bar{
     width: 221px;
     height: 770px;
@@ -137,6 +144,10 @@ body{
 }
 .content{
     padding-top: 30px;
+}
+
+.news{
+    margin-bottom: 30px;
 }
 .name{
     font-family: "Century Gothic", "Arial", sans-serif;
@@ -156,6 +167,7 @@ body{
     height: 74px;
     float: left;
     box-shadow: 5px 5px 15px 0px gray;
+    margin-top: 10px;
 }
 .news-text{
     font-family: "Century Gothic", "Arial", sans-serif;
@@ -163,7 +175,6 @@ body{
     line-height: 18px;
     font-weight: 400;
     width: 365px;
-    height: 126px;
     float: right;
 }
 .info{
