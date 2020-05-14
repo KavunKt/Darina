@@ -29,61 +29,47 @@ body{
     width: 94%;
     margin: 0 auto;
    }
+
+   .middle-header{
+    width: 960px;
+    margin: 0 auto;
+   } 
+
    .logo1{
     background-image: url('../img/logo1.png');
     height: 175px;
     width: 165px;
-    top: 9px;
-    left: 50%;
-    margin-left: -459px;
-    position: absolute;
+    float: left;
    }
    .logo2{
     background-image: url('../img/logo2.png');
     height: 185px;
     width: 257px;
-    top: 9px;
-    right: 50%;
-    margin-right: -510px;
-    position: absolute;
+    float: right;
+    
    }
-   .middle{
-       text-align: center;
-   }
+
    .text1{
-    width: 326px;
     font-family: "Century Gothic", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 16px;
     font-style: italic;
     left: 50%;
     margin-left: -164px;
-    position: absolute;
-}
-.text2{
-    width: 450px;
+    }
+    .text2{
     font-family: 'BinnerDi';
     font-weight: 400;
     font-size: 30px;
-    line-height: 30px;
     color: #4b8902;
-    left: 50%;
-    margin-left: -218px;
-    position: absolute;
-    margin-top: 54px;
-}
-.text3{
-    width: 201px;
+    text-align: center;
+    }
+    .text3{
     font-family: 'BinnerDi', "Arial", sans-serif;
     font-weight: 400;
     font-size: 48px;
-    line-height: 40px;
     color: #c76e49;
-    left: 50%;
-    margin-left: -108px;
-    position: absolute;
-    margin-top: 150px;
-}
+    text-align: center;
+    }
 
 .container{
     height: 934px; 
@@ -123,11 +109,11 @@ body{
     height: 35px;
     position: relative;
 }
-.left-picture2{
+    .left-picture2{
     background-image: url('../img/people.png');
     position: relative;
-    widows: 205px; ;
-    height:137px ;
+    width: 205px ;
+    height: 137px;
    
 }
    .left-side-bar{
