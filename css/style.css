@@ -25,7 +25,7 @@ body{
     position: relative;
    }
    .inner{
-    max-width: 1100px;
+    max-width: 980px;
     width: 94%;
     margin: 0 auto;
    }
@@ -33,6 +33,7 @@ body{
    .middle-header{
     width: 960px;
     margin: 0 auto;
+    
    } 
 
    .logo1{
@@ -40,21 +41,28 @@ body{
     height: 175px;
     width: 165px;
     float: left;
+    margin-left: 10px;
+    margin-top: 10px;
    }
    .logo2{
     background-image: url('../img/logo2.png');
     height: 185px;
     width: 257px;
     float: right;
-    
+    margin-top: 5px;
    }
-
+   .middle {
+    position: relative;
+    width: 483px;
+    margin: 0 auto;
+}
    .text1{
     font-family: "Century Gothic", "Arial", sans-serif;
     font-weight: 400;
     font-style: italic;
-    left: 50%;
-    margin-left: -164px;
+    text-align: center;
+    font-size: 16px;
+
     }
     .text2{
     font-family: 'BinnerDi';
@@ -70,22 +78,53 @@ body{
     color: #c76e49;
     text-align: center;
     }
+    .rings{
+        background: url('../img/rings.png');
+        position: absolute;
+
+    }
+
+   .clear {
+        clear: both;
+        height: 1px;
+    }
 
 .container{
     height: 934px; 
     width: 978px;
     background-image: url('../img/osn.png');
     background-size: cover;
-    position: absolute;
-    left: 50%;
-    margin-left: -489px;
-   }
+    margin-top: -16px;
+    padding-top: 30px;
+}
+.news_right{
+    margin-bottom: 50px;
+}
    .right-picture{
     background-image: url('../img/osn2.png');
     width: 209px;
     height: 35px;
-    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Century Gothic", "Arial", sans-serif;
+    line-height: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
+    .right-picture2{
+        background-image: url('../img/osn3.png');
+        width: 76px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Century Gothic", "Arial", sans-serif;
+        line-height: 35px;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-bottom: 39px;
+        margin-top: 10px;
+        
+    }
    .right-side-bar{
     width: 225px;
     height: 770px;
@@ -94,29 +133,63 @@ body{
     padding-top: 30px;
    }
 
+   input{
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 5px;
+    width: 174px;
+    color: black;
+    margin-bottom: 14px;
+}
+input::placeholder{
+    font-size: 16px;
+    font-family: "Century Gothic", "Arial", sans-serif;
+}
+
    .registration{
     font-family: "Century Gothic", "Arial", sans-serif;
     font-size: 11px;
     line-height: 25px;
     font-weight: 400;
     font-style: italic;
-    opacity: 0.7;
+
+}
+.category_right{
+    font-family: "Century Gothic", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.news-text_right{
+    font-family: "Century Gothic", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
 }
 
+
+    .left-picture2{
+    background-image: url('../img/people.png');
+    position: relative;
+    width: 205px;
+    height: 137px;
+    background-repeat: no-repeat;
+    margin-top: 26px;
+   
+}
    .left-picture{
     background-image: url('../img/osn2.png');
     width: 209px;
     height: 35px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Century Gothic", "Arial", sans-serif;
     position: relative;
+    line-height: 35px;
+    font-weight: bold;
 }
-    .left-picture2{
-    background-image: url('../img/people.png');
-    position: relative;
-    width: 205px ;
-    height: 137px;
-   
-}
-   .left-side-bar{
+.left-side-bar{
     width: 221px;
     height: 770px;
     float: left;
@@ -124,6 +197,48 @@ body{
     padding-top: 30px;
     padding-left: 23px;
    }
+
+
+   ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.about {
+    padding-left: 40px;
+    font-family: "Century Gothic", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: black;
+    text-decoration: none;
+}
+.about:before {
+    content: '';
+    float: left;
+    height: 20px;
+    width: 20px;
+    background: url('../img/marker.png') no-repeat center left;
+    background-size: contain;
+    display: inline-block;
+
+}
+.month {
+    padding-left: 40px;
+    font-family: "Century Gothic", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: black;
+    text-decoration: none;
+}
+.mounth:before {
+    content: '';
+    background: url('../img/marker2.png') no-repeat;
+    display: inline-block;
+    float: left;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    
+}
    .clear{
     height: 1px;
     clear: both;
@@ -154,14 +269,15 @@ body{
     float: left;
     box-shadow: 5px 5px 15px 0px gray;
     margin-top: 10px;
+    margin-right: 20px;
 }
 .news-text{
     font-family: "Century Gothic", "Arial", sans-serif;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    width: 365px;
-    float: right;
+    position: relative;
+    overflow: hidden;
 }
 .info{
     font-family: "Century Gothic", "Arial", sans-serif;
@@ -172,7 +288,20 @@ body{
     color: #475bc1;
     text-align: right;
 }
+ul{
+    list-style-type: none;
+}
+.pagination li{
+    list-style: none;
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline;
+}
 
+a{
+    text-decoration: none;
+}
    .footer{
     margin-top: -70px;
     height: 70px;
