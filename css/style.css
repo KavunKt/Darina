@@ -291,12 +291,26 @@ input::placeholder{
 ul{
     list-style-type: none;
 }
-.pagination li{
-    list-style: none;
-    display: inline;
+.pagination {
+    display: flex;
+    align-items: flex-end ; 
+    justify-content: center;
+    padding-left: 43px;
+    padding-top: 88px;
+}
+
+.pagination a {
+    color: black;
     font-size: 12px;
+    font-family: "Century Gothic", "Arial", sans-serif;
     font-weight: 400;
-    display: inline;
+
+}
+
+.pagination li {
+    float: left;
+    color: black;
+    margin-right: 18px;
 }
 
 a{
