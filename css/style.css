@@ -126,11 +126,11 @@ body{
         font-size: 16px;
         font-family: "Century Gothic", sans-serif;
         line-height: 35px;
-        font-weight: bold;
+        font-weight: 400;
         margin: 0 auto;
         margin-bottom: 39px;
         margin-top: 10px;
-        
+        font-style: italic;
     }
     .right-picture2 a{
         color: black;
@@ -180,6 +180,15 @@ input::placeholder{
     font-family: "Century Gothic", sans-serif;
     font-size: 12px;
     font-weight: 400;
+}
+
+.category_right_green{
+    font-family: "Century Gothic", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #4b8902;
+    float: right;
+    margin-top: -17px;
 }
 
 .name_right a{
@@ -235,43 +244,53 @@ input::placeholder{
 
    ul {
     list-style-type: none;
-    padding-inline-start: 0px;
+    margin-left: -30px;
+
 }
-.about {
-    padding-left: 40px;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 18px;
-    line-height: 36px;
+a {
     color: black;
     text-decoration: none;
 }
-.about:before {
+
+
+.menu li {
+    position: relative;
+    padding-left: 40px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.menu li a:before {
     content: '';
-    float: left;
+    position: absolute;
+    left: 7px;
+    top: 8px;
     height: 20px;
     width: 20px;
     background: url('../img/marker.png') no-repeat center left;
     background-size: contain;
-    display: inline-block;
-
 }
-.month {
+
+.month li {
+    position: relative;
     padding-left: 40px;
     font-family: "Century Gothic", sans-serif;
     font-size: 18px;
+    font-weight: 400;
     line-height: 36px;
-    color: black;
-    text-decoration: none;
 }
-.mounth:before {
+
+.month li a:before {
     content: '';
-    background: url('../img/marker2.png') no-repeat;
-    display: inline-block;
-    float: left;
-    background-size: contain;
+    position: absolute;
+    left: 7px;
+    top: 8px;
     height: 20px;
     width: 20px;
-    
+    background: url('../img/marker2.png') no-repeat center left;
+    background-size: contain;
 }
    .clear{
     height: 1px;
@@ -332,8 +351,7 @@ ul{
     display: flex;
     align-items: flex-end ; 
     justify-content: center;
-    padding-left: 43px;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .pagination a {
@@ -341,18 +359,25 @@ ul{
     font-size: 12px;
     font-family: "Century Gothic", sans-serif;
     font-weight: 400;
-
+    padding: 5px;
+    border: 1px solid transparent;
 }
 
 .pagination li {
     float: left;
     color: black;
-    margin-right: 18px;
+    margin-right: 8px;
+}
+.pagination li a:hover{
+    background-color: rgb(187, 187, 231);
+    border-radius: 5px;
+    opacity: 0.5;
+    border-width: 1px;
+    border-color: rgb(113, 113, 172);
 }
 
-a{
-    text-decoration: none;
-}
+
+
    .footer{
     margin-top: -70px;
     height: 70px;
